@@ -1,13 +1,16 @@
 #body {
     background-color: rgb(0, 0, 0);
-    padding
+height: 1000px;
 }
 
+html {
+    scroll-behavior: smooth scroll;
+}
 * {
     margin: 0;
     padding: 0;
 }
-.nav {
+.header {
   background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
@@ -15,19 +18,27 @@
   padding-left: 0%;
   margin-top: 0;
   margin-left: 0;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0
 
+
+
+}
 
   .logo { 
     background-color: rgb(0, 0, 0);
 height: 90px; 
-width: fit-content;
+width: auto;
 padding-top: 28px;
 margin-bottom: 0%;
 float: left;
 }
 
 
-}
+
 .mainname {
     display grid;
 
@@ -61,6 +72,39 @@ float: left;
     
 }
 
+.nav {
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right: 0;
+    font-size: 18px;
+   text-transform: uppercase;
+}
+
+.menu:hover {
+    color: rgb(255, 91, 2);
+    font-size: 30px;
+  
+}
+
+  
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+   
 .text {
     color: rgb(255, 255, 255);
     font-size: 80px;
@@ -68,10 +112,12 @@ float: left;
     text-decoration-style: wavy;
     font-family: 'Bangers', cursive;
 }
+
+
 .homepage {
     display: flex;
     background-color: rgb(0, 0, 0);
-    height: 600px;
+    height: 900px;
    justify-content: center;
    align-items: center;
    margin-top: 0%;
@@ -114,7 +160,51 @@ float: left;
     .logo {
         height: 83px;
         width: fit-content;
-        padding-top: 35px;
+        padding-top: 35px; }
     
 }
 
+.footer {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    height: 500px;
+    justify-content: center;
+    align-items: center; 
+    align-content: center; 
+    text-align: center;
+
+   
+}
+
+.about {
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 255, 255);
+
+    
+}
+
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 50px;
+    justify-content: center; }
+    }
+
+    @media (max-width: 768px) {
+        .nav {
+            font-size: 14px;
+        justify-content: center;
+        justify-content: space-around;
+     }
+        }
+
+    .descr {
+        color: rgb(238, 238, 231);
+        font-size: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       text-align: center; 
+       line-height: 40px;
+       padding-left: 70px;
+       padding-right: 70px;
+    }
